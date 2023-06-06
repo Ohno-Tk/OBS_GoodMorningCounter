@@ -1,8 +1,8 @@
 # OBS_Counter
 
 <!-- repo url. -->
-[Releases]: https://github.com/Ohno-Tk/OBS_GoodMorningCounter?logo=github
-[Downloads]: https://github.com/Ohno-Tk/OBS_GoodMorningCounter/total?logo=github
+[Releases]: https://img.shields.io/github/v/release/Ohno-Tk/OBS_GoodMorningCounter?logo=github
+[Downloads]: https://img.shields.io/github/downloads/Ohno-Tk/OBS_GoodMorningCounter/total?logo=github
 [Stars]: https://img.shields.io/github/stars/Ohno-Tk/OBS_GoodMorningCounter?style=social
 
 <!-- development tool url. -->
