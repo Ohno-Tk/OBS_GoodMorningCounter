@@ -39,7 +39,7 @@
 ## Screenshot
 obsで表示できるカウンター
 <div align="center">
-  <img width="500" src="https://user-images.githubusercontent.com/51406176/220805286-9b8532f0-caea-4d68-bcaf-a7772cea8dd5.jpg">
+  <img width="500" src="https://github.com/Ohno-Tk/OBS_GoodMorningCounter/assets/51406176/646ba219-9e61-449e-aac3-2a00cd30ea31">
 </div>
 
 ## Features
