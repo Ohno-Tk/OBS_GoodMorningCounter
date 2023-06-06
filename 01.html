@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 文字コード変更 -->
+    <meta charset="UTF-8">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        font-family: "Nico Moji";
+        background-color: #000000;
+      }
+
+      p {
+        color: #FFAF4D;
+      }
+
+      div {
+        display:block;
+      }
+
+      .string_01 {
+        transform-origin:0 50%;
+        transform:rotate(-5deg);
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .string_02 {
+        transform-origin:0 50%;
+        transform:rotate(3deg);
+        font-size: 25px;
+        padding-left: 80px;
+        padding-top: 5px;
+        margin: 0;
+      }
+
+      h1 {
+        color: #FFFF00;
+        padding-left: 50px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class = "string_01">ただいま</p>
+      <h1></h1>
+      <p class = "string_02">おは！</p>
+    </div>
+		<script>
+			$(function(){
+				setInterval(function(){
+					var count = window.localStorage.getItem('count_01');
+					$('h1').text(count);
+				},1000);
+			});
+		</script>
+  </body>
+</html>

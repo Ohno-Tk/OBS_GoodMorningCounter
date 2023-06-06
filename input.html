@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 文字コード変更 -->
+    <meta charset="UTF-8">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        text-align: center;
+        font-family: "Nico Moji";
+      }
+
+      .button01 {
+        width: 3.5em;
+        height: 3em;
+        border-radius: 10px;
+        font-size: 200%;
+        background-color: #141414;
+        color: #FFAF4D;
+        font-weight: bold;
+      }
+
+      .button01:hover {
+        background-color: #FFAF4D;
+        color: #141414;
+      }
+
+      .button02 {
+        width: 5em;
+        height: 3em;
+        border-radius: 10px;
+        font-size: 130%;
+        background-color: #141414;
+        color: #FFAF4D;
+        font-weight: bold;
+      }
+
+      .button02:hover {
+        background-color: #FFAF4D;
+        color: #141414;
+      }
+
+      .borders {
+        background-color: #F18700;
+        border:1px solid #F18700;
+        border-radius: 10px;
+        padding: 5px;
+      }
+
+      .number_area {
+        width: 8em;
+        height:5em;
+        border-radius: 10px;
+        text-align: center;
+      }
+    </style>
+
+  </head>
+  <body>
+    <table class = "borders">
+      <tr>
+        <th>おはようカウンター</th>
+      </tr>
+      <tr>
+        <td><input type="text" class = "calc_02 number_area number_area_01" value="0"></td>
+      </tr>
+      <tr>
+        <td>
+          <button type="button" class="calc_01 button01" value="1">+1</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button type="button" class="calc_01 button02" value="-1">-1</button>
+        </td>
+      </tr>
+    </table>
+
+
+
+    <script type="text/javascript">
+    // 初期化
+    var count_01 = 0;
+
+    window.localStorage.setItem('count_01',count_01);
+
+    // 加算・減算
+    $(".calc_01").click(function(){
+      count_01 = count_01 + parseInt($(this).val());
+			$(".number_area_01").val(count_01);
+			window.localStorage.setItem('count_01',count_01);
+		});
+
+    $('.calc_02').mouseleave(function () {
+      count_01 = parseInt($(this).val());
+      $(".number_area_01").val(count_01);
+			window.localStorage.setItem('count_01',count_01);
+    })
+    </script>
+  </body>
+</html>
